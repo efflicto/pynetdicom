@@ -7,14 +7,14 @@
 
 from DIMSEparameters import *
 from DULparameters import *
-from dicom.dataset import Dataset
+from pydicom.dataset import Dataset
 import dsutils
 from struct import pack, unpack
-from dicom.UID import ImplicitVRLittleEndian
+from pydicom.uid import ImplicitVRLittleEndian
 #
 #  pydicom's dictionnary misses command tags. Add them.
 #
-from dicom._dicom_dict import DicomDictionary
+from pydicom._dicom_dict import DicomDictionary
 import itertools
 
 import logging

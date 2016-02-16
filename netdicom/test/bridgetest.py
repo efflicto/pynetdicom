@@ -14,7 +14,7 @@ import time
 import stat
 import os
 import traceback
-from dicom.dataset import Dataset, FileDataset
+from pydicom.dataset import Dataset, FileDataset
 import time
 from netdicom.applicationentity import AE
 from netdicom.SOPclass import *

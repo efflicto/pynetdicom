@@ -6,13 +6,10 @@
 #
 
 import StringIO
-import dicom
-if dicom.__version_info__ >= (0, 9, 8):
-    from dicom.filebase import DicomBytesIO
-else:
-    from dicom.filebase import DicomStringIO as DicomBytesIO
-from dicom.filereader import read_dataset
-from dicom.filewriter import write_dataset, write_data_element
+import pydicom
+from pydicom.filebase import DicomBytesIO
+from pydicom.filereader import read_dataset
+from pydicom.filewriter import write_dataset, write_data_element
 
 
 def decode(rawstr, is_implicit_VR, is_little_endian):

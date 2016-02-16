@@ -10,7 +10,7 @@ Server AE example.
 
 This demonstrates a simple application entity that support a number of
 Storage service classes. For this example to work, you need to setup a
-Storage SCU sending to port 9999 on localhost. With the offis dicom
+Storage SCU sending to port 9999 on localhost. With the offis pydicom
 toolkit, this can be done with the command:
 
 storescu -v localhost 9999 FILE.dcm
@@ -23,7 +23,7 @@ import netdicom
 import time
 from netdicom.applicationentity import AE
 from netdicom.SOPclass import *
-from dicom.dataset import Dataset, FileDataset
+from pydicom.dataset import Dataset, FileDataset
 import dcmtkscu
 from utils import testfiles_dir
 

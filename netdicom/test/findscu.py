@@ -11,9 +11,9 @@ sys.path.append('..')
 import time
 from applicationentity import AE
 from SOPclass import PatientRootFindSOPClass, VerificationSOPClass
-import dicom
+import pydicom
 from dcmqrscp import start_dcmqrscp
-from dicom.dataset import Dataset
+from pydicom.dataset import Dataset
 
 # first create a partner
 start_dcmqrscp(server_port=2001, server_AET='AE1', populate=True)

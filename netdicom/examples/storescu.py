@@ -13,9 +13,9 @@ import sys
 import argparse
 from netdicom import AE
 from netdicom.SOPclass import StorageSOPClass, VerificationSOPClass
-from dicom.UID import ExplicitVRLittleEndian, ImplicitVRLittleEndian, \
+from pydicom.uid import ExplicitVRLittleEndian, ImplicitVRLittleEndian, \
     ExplicitVRBigEndian
-from dicom import read_file
+from pydicom import read_file
 
 
 # parse commandline

@@ -22,7 +22,7 @@ sys.path.append('..')
 import time
 from applicationentity import AE
 from SOPclass import *
-import dicom
+import pydicom
 import dcmqrscp
 from utils import testfiles_dir
 
@@ -43,7 +43,7 @@ MyAE.OnAssociateResponse = OnAssociateResponse
 RemoteAE = {'Address': 'localhost', 'Port': 2000, 'AET': 'OFFIS_AE'}
 
 # create some dataset
-d = dicom.read_file(os.path.join(testfiles_dir(), "rtplan.dcm"))
+d = pydicom.read_file(os.path.join(testfiles_dir(), "rtplan.dcm"))
 
 # create association with remote AE
 print "Request association"

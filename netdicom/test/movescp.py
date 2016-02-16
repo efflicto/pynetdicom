@@ -23,7 +23,7 @@ import time
 from applicationentity import AE
 from SOPclass import PatientRootMoveSOPClass, VerificationSOPClass, \
     RTPlanStorageSOPClass
-import dicom
+import pydicom
 from dcmqrscp import start_dcmqrscp
 import dcmtkscu
 from utils import testfiles_dir
@@ -56,7 +56,7 @@ def OnReceiveMove(self, ident, remoteAE):
 
     for ii in range(nop):
         # create fake dataset
-        ds = dicom.read_file(os.path.join(testfiles_dir(), "rtplan.dcm"))
+        ds = pydicom.read_file(os.path.join(testfiles_dir(), "rtplan.dcm"))
         print "sending fake dataset"
         yield ds
 

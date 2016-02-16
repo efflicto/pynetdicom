@@ -13,7 +13,7 @@ import sys
 import select
 import platform
 from SOPclass import *
-from dicom.UID import ExplicitVRLittleEndian, ImplicitVRLittleEndian, \
+from pydicom.uid import ExplicitVRLittleEndian, ImplicitVRLittleEndian, \
     ExplicitVRBigEndian, UID
 from DULprovider import DULServiceProvider
 from DIMSEprovider import DIMSEServiceProvider

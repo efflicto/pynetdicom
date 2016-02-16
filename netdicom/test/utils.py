@@ -9,7 +9,7 @@ import os
 import sys
 
 try:
-    import dicom
+    import pydicom
 except:
     raise Exception("dicom package not found. Please install it")
 
@@ -17,7 +17,7 @@ except:
 def testfiles_dir():
     """returns the testfiles directory"""
 
-    d, f = os.path.split(dicom.__file__)
+    d, f = os.path.split(pydicom.__file__)
     return os.path.join(d, 'testfiles')
 
 

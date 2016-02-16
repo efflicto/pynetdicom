@@ -14,8 +14,8 @@ python qrscu.py -h
 import argparse
 from netdicom.applicationentity import AE
 from netdicom.SOPclass import *
-from dicom.dataset import Dataset, FileDataset
-from dicom.UID import ExplicitVRLittleEndian, ImplicitVRLittleEndian, \
+from pydicom.dataset import Dataset, FileDataset
+from pydicom.uid import ExplicitVRLittleEndian, ImplicitVRLittleEndian, \
     ExplicitVRBigEndian
 import netdicom
 # netdicom.debug(True)

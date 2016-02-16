@@ -1,4 +1,4 @@
-"""Run example scripts with the various PEERs running on the Dicom Test
+"""Run example scripts with the various PEERs running on the pydicom Test
 Server VM."""
 
 import test_config

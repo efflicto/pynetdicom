@@ -9,7 +9,7 @@
 # This module provides association services
 from DULparameters import *
 from PDU import MaximumLengthParameters
-from dicom.UID import UID
+from pydicom.uid import UID
 import socket
 import time
 
